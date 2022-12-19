@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Kertaus</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="laskuri_nappi">Laskuri</string>
+    <string name="formi_nappi">Formi</string>
+    <string name="lista_nappi">Lista</string>
+    <string name="peli_nappi">Peli</string>
+    <string name="netti_nappi">Netti</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="nimi">Nimi:</string>
+    <string name="osoite">Osoite:</string>
+    <string name="lupa">Muistilupa</string>
+    <string name="tallenna">Tallenna</string>
+    <string name="on_lupa">On lupa</string>
+    <string name="ei_lupa">Ei lupaa</string>
+    <string name="hae">Hae tietoa</string>
+</resources>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FormiFragmentti">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nimi_title"
+            android:text="@string/nimi"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nimi_edit"
+            app:layout_constraintTop_toBottomOf="@id/nimi_title"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/osoite_title"
+            android:text="@string/osoite"
+            app:layout_constraintTop_toBottomOf="@id/nimi_edit"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/osoite_edit"
+            app:layout_constraintTop_toBottomOf="@id/osoite_title"/>
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lupa_boksi"
+            android:text="@string/lupa"
+            app:layout_constraintTop_toBottomOf="@id/osoite_edit"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tallenna_nappi"
+            android:text="@string/tallenna"
+            app:layout_constraintTop_toBottomOf="@id/lupa_boksi"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

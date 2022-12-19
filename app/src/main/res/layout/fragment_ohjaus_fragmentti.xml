@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".OhjausFragmentti">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/laskurinappi"
+            app:layout_constraintStart_toStartOf="parent"
+            android:backgroundTint="@color/teal_200"
+            app:layout_constraintEnd_toStartOf="@id/forminappi"
+            android:text="@string/laskuri_nappi"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toEndOf="@id/laskurinappi"
+            app:layout_constraintEnd_toStartOf="@id/listanappi"
+            android:text="@string/formi_nappi"
+            android:id="@+id/forminappi"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toEndOf="@id/forminappi"
+            app:layout_constraintEnd_toStartOf="@id/pelinappi"
+            android:backgroundTint="@color/material_dynamic_neutral80"
+            android:text="@string/lista_nappi"
+            android:id="@+id/listanappi"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/pelinappi"
+            app:layout_constraintStart_toEndOf="@id/listanappi"
+            app:layout_constraintEnd_toStartOf="@id/nettinappi"
+            android:text="@string/peli_nappi"
+            android:backgroundTint="@color/material_dynamic_neutral30"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/nettinappi"
+            app:layout_constraintStart_toEndOf="@id/pelinappi"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="@string/netti_nappi"
+            android:backgroundTint="@color/material_dynamic_neutral_variant80"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
